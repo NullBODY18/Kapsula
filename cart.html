@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кошик - Kapsula</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <img src="img/logo.png" class="logo" alt="KAPSULA">
+        </div>
+        <nav class="nav-center">
+            <a href="home.html" class="nav-text">Home</a>
+            <a href="clotnes.html" class="nav-text">Clothes</a>
+            <a href="cart.html" class="nav-text active">Basket</a>
+        </nav>
+        <div class="nav-right">
+            <div class="cart-wrapper">
+                <span id="cart-count">0</span>
+                <img src="img/Avatar.png" class="avatar" alt="Profile">
+            </div>
+        </div>
+    </div>
+
+    <main class="cart-page">
+        <div class="cart-header">
+            <h1>Ваш кошик</h1>
+            <button class="btn-clear" onclick="clearCart()">Очистити кошик</button>
+        </div>
+        
+        <div id="cart-container" class="cart-container">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="img/logo.png" class="logo" alt="KAPSULA">
+        </div>
+        <div class="footer-center">
+            <a href="404.html">Контакти</a>
+            <a href="404.html">Доставка та оплата</a>
+            <a href="credits.html">Авторство</a>
+        </div>
+        <div class="footer-right">
+            <p>2026 KAPSULA</p>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

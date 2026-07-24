@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення замовлення - Kapsula</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">
+            <img src="img/logo.png" class="logo" alt="KAPSULA">
+        </div>
+        <nav class="nav-center">
+            <a href="home.html" class="nav-text">Home</a>
+            <a href="clotnes.html" class="nav-text">Clothes</a>
+            <a href="cart.html" class="nav-text">Basket</a>
+        </nav>
+        <div class="nav-right">
+            <div class="cart-wrapper">
+                <span id="cart-count">0</span>
+                <img src="img/Avatar.png" class="avatar" alt="Profile">
+            </div>
+        </div>
+    </div>
+
+    <main class="checkout-page">
+        <h1>Оформлення замовлення</h1>
+        <form class="checkout-form" id="checkout-form" onsubmit="processOrder(event)">
+            <div class="form-group">
+                <label for="name">Ім'я та Прізвище</label>
+                <input type="text" id="name" required placeholder="Введіть ваше ім'я">
+            </div>
+            <div class="form-group">
+                <label for="phone">Номер телефону</label>
+                <input type="tel" id="phone" required placeholder="+38 (000) 000-00-00">
+            </div>
+            <div class="form-group">
+                <label for="city">Місто та відділення НП</label>
+                <input type="text" id="city" required placeholder="Київ, Відділення №1">
+            </div>
+            <div class="form-group">
+                <label for="payment">Спосіб оплати</label>
+                <select id="payment" required>
+                    <option value="card">Карткою онлайн</option>
+                    <option value="cash">При отриманні</option>
+                </select>
+            </div>
+            
+            <div class="checkout-summary">
+                <p>До сплати: <strong id="checkout-total">0</strong>$</p>
+            </div>
+
+            <button type="submit" class="btn-add btn-large">Підтвердити замовлення</button>
+        </form>
+    </main>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
